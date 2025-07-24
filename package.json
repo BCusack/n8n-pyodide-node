@@ -1,0 +1,19 @@
+{
+  "name": "n8n-nodes-pyodide",
+  "version": "1.0.0",
+  "description": "n8n custom node to execute Python code using Pyodide",
+  "main": "PyodideNode.js",
+  "types": "PyodideNode.d.ts",
+  "author": "Brian Cusack",
+  "license": "MIT",
+  "dependencies": {
+    "pyodide": "^0.28.0",
+    "n8n-workflow": "^1.28.0"
+  },
+  "keywords": [
+    "n8n",
+    "custom-node",
+    "pyodide",
+    "python"
+  ]
+}

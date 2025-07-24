@@ -1,0 +1,19 @@
+{
+  "node": "n8n-nodes-pyodide.PyodideNode",
+  "nodeVersion": "1.0.0",
+  "codex": {
+    "categories": ["Development", "Data & Storage"],
+    "subcategories": {
+      "Development": ["Programming Languages"],
+      "Data & Storage": ["Data Processing"]
+    },
+    "resources": {
+      "primaryDocumentation": [
+        {
+          "url": "https://pyodide.org/en/stable/"
+        }
+      ],
+      "credentialDocumentation": []
+    }
+  }
+}
