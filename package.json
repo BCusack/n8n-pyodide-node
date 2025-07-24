@@ -2,12 +2,28 @@
   "name": "n8n-nodes-pyodide",
   "version": "1.0.0",
   "description": "n8n custom node to execute Python code using Pyodide",
-  "main": "PyodideNode.js",
-  "types": "PyodideNode.d.ts",
+  "main": "dist/PyodideNode.js",
+  "types": "dist/PyodideNode.d.ts",
   "author": "Brian Cusack",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean"
+  },
   "dependencies": {
-    "pyodide": "^0.28.0",
+    "pyodide": "^0.28.0"
+  },
+  "devDependencies": {
+    "n8n-workflow": "^1.28.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
     "n8n-workflow": "^1.28.0"
   },
   "keywords": [
